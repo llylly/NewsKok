@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorWhiteHalfTransient">#80FFFFFF</color>
+    <color name="colorBlackHalfTransient">#80000000</color>
+    <color name="colorDarkGray">#101010</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorPanelBg">#e4e5e4</color>
+    <color name="colorSetting">#282828</color>
+    <color name="colorNewsItemBorder">#303030</color>
+    <color name="colorTab">#245171</color>
+
+    <color name="colorTitle">#2d2d2d</color>
+    <color name="colorLikedBg">#B3DFFF</color>
+    <color name="colorTime">#949494</color>
+    <color name="colorCorner">#949494</color>
+    <color name="colorIntro">#5c5c5c</color>
+
+    <color name="colorItemChoosed">#C0C0C0</color>
+
+    <color name="colorTransparent">#000000FF</color>
+</resources>

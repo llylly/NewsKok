@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/colorBlackHalfTransient">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/sideLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/frameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/title_bg_n"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/comment_board"
+                    android:textSize="@dimen/title_size"
+                    android:textColor="@color/colorWhite"/>
+
+
+                <ImageButton
+                    android:id="@+id/addCommentBtn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:background="@drawable/orange_btn"
+                    android:src="@drawable/add_comment_btn"
+                    android:scaleType="fitCenter"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/frameLayout"
+                    android:layout_toStartOf="@+id/frameLayout"
+                    android:layout_gravity="right|center_vertical" />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPanelBg">
+
+                <me.maxwin.view.XListView
+                    android:id="@+id/commentList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@color/colorDarkGray"
+                    android:dividerHeight="1dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/addCommentFrame"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlackHalfTransient">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="20dp"
+            android:background="@color/colorWhiteHalfTransient">
+            
+            <EditText
+                android:id="@+id/nickNameEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textNoSuggestions"
+                android:lines="1"
+                android:ems="10"
+                android:hint="@string/nickname_area"
+                android:textColor="@color/colorPrimaryDark"/>
+            
+            <EditText
+                android:id="@+id/commentEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:singleLine="false"
+                android:minLines="4"
+                android:lines="4"
+                android:ems="10"
+                android:hint="@string/comment_area"
+                android:gravity="top"
+                android:scrollbarAlwaysDrawVerticalTrack="true"/>
+
+            <Button
+                android:id="@+id/commentPost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/orange_btn"
+                android:text="@string/comment_post"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/intro_size"/>
+
+            
+        </LinearLayout>
+
+    </FrameLayout>
+
+</FrameLayout>

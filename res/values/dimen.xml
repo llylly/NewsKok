@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="slidingmenu_offset">150dp</dimen>
+    <dimen name="shadow_width">0dp</dimen>
+
+    <dimen name="huge_size">50sp</dimen>
+    <dimen name="title_size">20sp</dimen>
+    <dimen name="intro_size">14sp</dimen>
+    <dimen name="note_size">10sp</dimen>
+
+</resources>

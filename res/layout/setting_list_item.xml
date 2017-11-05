@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/showedTabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/title_size"
+            android:gravity="left"
+            android:layout_margin="10dp"
+            android:text="@string/showed_tabs"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/hideTabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/title_size"
+            android:gravity="left"
+            android:layout_margin="10dp"
+            android:text="@string/hide_tabs"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/showedSources"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/title_size"
+            android:gravity="left"
+            android:layout_margin="10dp"
+            android:text="@string/showed_sources"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/hideSources"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/title_size"
+            android:gravity="left"
+            android:layout_margin="10dp"
+            android:text="@string/hide_sources"
+            android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/itemMain"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/setting_item_bg">
+
+        <TextView
+            android:id="@+id/itemText"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/colorTitle"
+            android:textSize="@dimen/title_size"
+            android:text="Item" />
+
+        <ImageButton
+            android:id="@+id/upBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/orange_btn"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/up_arrow"
+            android:scaleType="fitCenter"/>
+
+        <ImageButton
+            android:id="@+id/downBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/orange_btn"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/down_arrow"
+            android:scaleType="fitCenter"/>
+
+        <ImageButton
+            android:id="@+id/unableBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/orange_btn"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/item_unable"
+            android:scaleType="fitCenter"/>
+
+        <ImageButton
+            android:id="@+id/enableBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/orange_btn"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/item_able"
+            android:scaleType="fitCenter"/>
+
+    </LinearLayout>
+
+</LinearLayout>

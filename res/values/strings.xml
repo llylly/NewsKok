@@ -1,0 +1,96 @@
+<resources>
+    <string name="package_name">com.ihandy.t2014011361.newskok</string>
+    <string name="app_name">新闻角</string>
+    <string name="desktop_name">李林翼</string>
+    <string name="loading">加载中...</string>
+
+
+    <string name="database_name">newskok</string>
+    <string name="config_shared_name">config</string>
+
+    <string name="loading_config">加载设置与分类...</string>
+    <string name="finish_config">设置与分类加载完毕</string>
+    <string name="fetch_news">获取新闻中，请耐心等待</string>
+    <string name="finish_news">新闻获取完毕</string>
+    <string name="internet_check">检查网络连接</string>
+    <string name="no_internet_warning">找不到可用网络，“新闻角”将只能使用离线数据。</string>
+    <string name="confirm_button">确定</string>
+    <string name="finish_loading">加载完毕</string>
+
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+
+    <string name="not_refresh_yet">尚未刷新</string>
+    <string name="last_refresh_time">上次刷新时间</string>
+
+    <string name="news_empty">该分类下暂无新闻</string>
+
+    <string name="enter_main">进入新闻页面</string>
+
+    <string name="refresh_failed">已无最新新闻，请稍后再刷新</string>
+    <string name="loadmore_failed">已无更多新闻</string>
+
+    <string name="liked_toast">加入收藏</string>
+    <string name="unliked_toast">取消收藏</string>
+
+    <string name="setting">设定</string>
+    <string name="tab_setting">分类设定</string>
+    <string name="source_setting">新闻源设定</string>
+    <string name="like_list">收藏列表</string>
+    <string name="about_setting">关于</string>
+
+    <string name="about_name">李林翼</string>
+    <string name="about_no">2014011361 @ THU</string>
+    <string name="about_description">Java语言程序设计 课程大作业</string>
+
+    <string name="showed_tabs">可见分类</string>
+    <string name="hide_tabs">隐藏分类</string>
+
+    <string name="showed_sources">可见新闻源</string>
+    <string name="hide_sources">隐藏新闻源</string>
+
+    <string name="likelist_empty">尚未收藏新闻</string>
+
+    <string name="share_wechat_friend">微信好友</string>
+    <string name="share_wechat_timeline">微信朋友圈</string>
+    <string name="share_sina_weibo">新浪微博</string>
+
+    <string name="comment_board">留言板</string>
+    <string name="floor">楼</string>
+    <string name="nickname">昵称</string>
+    <string name="comment_failed">留言加载失败，请检查网络连接</string>
+    <string name="nickname_area">昵称</string>
+    <string name="comment_area">评论...</string>
+    <string name="comment_post">发表评论</string>
+    <string name="nickname_empty">昵称不能为空</string>
+    <string name="comment_empty">评论内容不能为空</string>
+    <string name="comment_add_success">评论发表成功</string>
+    <string name="comment_add_fail">评论发表失败</string>
+    <string name="comment_list_empty">尚无评论，沙发等你来抢~</string>
+
+    <string name="xunfei_appid">=57c6ddcf</string>
+
+    <string name="sync0">分类 </string>
+    <string name="sync1"> 下的最新新闻有：</string>
+    <string name="sync2">，</string>
+    <string name="sync3">。</string>
+    <string name="sync4">来源</string>
+    <string name="sync5">为 </string>
+    <string name="sync6">无</string>
+
+    <string name="audio_finish">新闻列表播放完毕</string>
+
+    <string name="sync_e">该分类下暂时没有新闻，请保持网络畅通并及时刷新。</string>
+
+    <string name="menu0">小燕（中英文，普通话）</string>
+    <string name="menu1">亨利（英文）</string>
+    <string name="menu2">小梅（粤语广府片）</string>
+    <string name="menu3">小强（新湘语长株潭小片）</string>
+    <string name="menu4">小蓉（西南官话成渝片）</string>
+    <string name="menu5">小坤（中原官话郑洛片）</string>
+
+</resources>

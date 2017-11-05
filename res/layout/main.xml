@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:animateLayoutChanges="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite">
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/title_bg_n"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/settingBtn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:gravity="center"
+                    android:background="@drawable/orange_btn"
+                    android:src="@drawable/setting_btn"
+                    android:scaleType="fitCenter"
+                    android:layout_gravity="center" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/mini_logo" />
+
+                <ImageButton
+                    android:id="@+id/audioBtn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:gravity="center"
+                    android:background="@drawable/orange_btn"
+                    android:src="@drawable/audio_btn"
+                    android:scaleType="fitCenter"
+                    android:layout_gravity="center" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPanelBg">
+
+            <android.support.v4.view.PagerTabStrip
+                android:id="@+id/tabStrip"
+                android:layout_width="match_parent"
+                android:paddingBottom="15dp"
+                android:layout_height="50dp"
+                android:background="@drawable/tab_bg_n" />
+
+        </android.support.v4.view.ViewPager>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/imgFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:visibility="gone">
+
+        <uk.co.senab.photoview.PhotoView
+            android:id="@+id/imageMainView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/loading_png"
+            android:background="@color/colorBlackHalfTransient"
+            />
+
+        <ImageButton
+            android:id="@+id/imgCloseBtn"
+            android:layout_margin="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right"
+            android:background="@drawable/close"/>
+
+    </FrameLayout>
+
+</FrameLayout>

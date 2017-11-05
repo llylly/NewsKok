@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/welcomeImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/launch"
+        android:scaleType="centerCrop"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/colorWhiteHalfTransient"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:gravity="center">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/loading"
+                android:textSize="30sp"
+                android:textColor="@color/colorWhite"
+                android:gravity="center"
+                android:paddingLeft="50dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/colorWhite"
+            android:paddingTop="10dp"
+            android:text=""
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/enterMain"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/orange_btn"
+        android:layout_gravity="bottom"
+        android:text="@string/enter_main"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/title_size"
+        android:visibility="gone"
+        />
+
+</FrameLayout>

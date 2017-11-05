@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/title_bg_n"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/settingTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:text="@string/setting"
+            android:layout_gravity="center"
+            android:textSize="@dimen/title_size"/>
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:background="@drawable/orange_btn"
+            android:src="@drawable/close"
+            android:scaleType="fitCenter"
+            android:layout_centerVertical="true"
+            android:layout_gravity="right|center_vertical" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/settingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPanelBg"
+        android:orientation="vertical"/>
+
+</LinearLayout>
+
+<TextView
+    android:id="@+id/loadingView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlackHalfTransient"
+    android:textColor="@color/colorWhite"
+    android:textSize="@dimen/huge_size"
+    android:text="@string/loading"
+    android:visibility="gone"
+    android:gravity="center"/>
+
+</FrameLayout>
